@@ -24,7 +24,7 @@ const reminders = (state = [], action) => {
             console.log('reminders as state', reminders);
             bake_cookie('reminders', reminders);
             return reminders;
-         case DELETE_REMINDER:
+        case DELETE_REMINDER:
             reminders = removeById(state, action.id);
             bake_cookie('reminders', reminders);
             return reminders;
